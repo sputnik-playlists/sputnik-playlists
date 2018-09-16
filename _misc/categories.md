@@ -1,0 +1,25 @@
+# Categories
+
+- Cloud Computing
+  - AWS
+  - Docker
+  - Kubernetes
+- Computer Architecture
+- Electronics
+  - Arduino
+  - Raspberry Pi
+- Operating Systems
+  - Linux
+  - Networking
+- Personal Skills
+  - Communication
+- Programming
+  - Design Patterns
+  - Language: Bash
+  - Language: C
+  - Language: Rust
+  - Parallel Programming
+- Theory
+  - Algorithms
+  - Logic & Problem Solving
+  - Mathematics

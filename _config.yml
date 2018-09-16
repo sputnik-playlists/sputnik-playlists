@@ -1,0 +1,16 @@
+title: "Sputnik Playlists"
+url: ""
+exclude: [
+  .editorconfig,
+  .gitignore,
+  docker-compose.yml,
+  Gemfile,
+  Gemfile.lock,
+  package.json,
+  yarn.lock
+]
+highlighter: false
+kramdown:
+  auto_ids: false
+collections:
+  - playlists

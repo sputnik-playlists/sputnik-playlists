@@ -1,0 +1,29 @@
+<div class="playlists">
+    <ol>
+        {% for playlist in site.playlists %}
+        <li>
+            <div class="playlist">
+                <ul>
+                    <li class="playlist__title"><strong>{{ playlist.title }}</strong></li>
+                    <li class="playlist__id"><strong>ID:</strong> {{ playlist.uri }}</li>
+                    <li class="playlist__link">
+                        <a target="__blank" href="https://open.spotify.com/user/gvkgwnx0oy5ipbif7727au1m7/playlist/{{ playlist.uri }}">
+                            Playlist Link
+                        </a>
+                    </li>
+                    <li class="playlist__frame">
+                        <iframe
+                            src="https://open.spotify.com/embed/user/gvkgwnx0oy5ipbif7727au1m7/playlist/{{ playlist.uri }}"
+                            width="100%"
+                            height="380"
+                            frameborder="0"
+                            allowtransparency="true"
+                            allow="encrypted-media">
+                        </iframe>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        {% endfor %}
+    </ol>
+</div>

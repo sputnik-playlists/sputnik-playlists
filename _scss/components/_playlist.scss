@@ -1,0 +1,13 @@
+.playlist {
+
+  li {
+    @include type-leader(.25);
+    @include type-leader-clear;
+
+    &.playlist__frame {
+      @include type-leader(.5);
+      @include type-leader-clear;
+    }
+  }
+
+}

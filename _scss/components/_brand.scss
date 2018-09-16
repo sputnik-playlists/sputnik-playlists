@@ -1,0 +1,18 @@
+.brand {
+  @include type-leader;
+  @include type-leader-clear;
+
+  a {
+    color: $color-grey-abyss;
+    font-family: $type-font-family-display;
+  }
+
+  span {
+    font-weight: 400;
+  }
+
+  a:hover,
+  a:focus {
+    color: $color-link;
+  }
+}

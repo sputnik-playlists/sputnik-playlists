@@ -1,0 +1,16 @@
+version: "2"
+services:
+  web:
+    command: ["jekyll", "serve"]
+    image: "jekyll/jekyll"
+    volumes:
+      - "./:/srv/jekyll"
+    ports:
+      - "4000"
+  node:
+    command: ["yarn", "run", "auth"]
+    image: "ellioseven/node:9"
+    ports:
+      - "8080:8080"
+    volumes:
+      - "./:/srv"

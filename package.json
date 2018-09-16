@@ -1,0 +1,30 @@
+{
+  "name": "ellioseven",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "scripts": {
+    "build": "node-sass --output-style compressed _scss/app.scss > css/app.css",
+    "dev": "node-sass --watch --recursive --output css --source-map true --source-map-contents _scss",
+    "auth": "node server.js"
+  },
+  "devDependencies": {
+    "breakpoint-sass": "^2.7.1",
+    "compass-mixins": "^0.12.10",
+    "express": "^4.16.3",
+    "node-sass": "^4.9.2",
+    "sass-toolkit": "^2.10.2",
+    "sass-units-translate": "^1.0.3",
+    "sassdash": "^0.9.0",
+    "spotify-web-api-node": "^3.1.1",
+    "susy": "^2.2.12",
+    "type-heading": "^0.1.0"
+  },
+  "engines": {
+    "node": ">= 6.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "dependencies": {
+    "spotify-web-api-node": "^3.1.1"
+  }
+}

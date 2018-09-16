@@ -1,0 +1,42 @@
+code,
+pre {
+  font-family: $type-font-family-mono;
+  margin: 0;
+  padding: 0;
+  tab-size: 4;
+}
+
+code {
+  color: $color-green-cyan;
+  display: inline-block;
+  font-weight: 700;
+
+  h1 &,
+  h2 &,
+  h3 &,
+  h4 &,
+  h5 &,
+  h6 & {
+    color: inherit;
+  }
+}
+
+pre {
+  @include border-radius(3px);
+  @include type-leader;
+  @include type-leader-clear;
+  background-color: $color-grey-sky;
+  display: block;
+  max-width: 100%;
+  overflow: auto;
+  padding: em($base-vertical-margin);
+
+  code {
+    background: none;
+    color: inherit;
+    display: block;
+    font-weight: inherit;
+    padding: 0;
+    width: 100%;
+  }
+}
